@@ -3,13 +3,16 @@ import { motion } from 'framer-motion';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
 import DamageForm from './DamageForm';
 
+// 1. Hier importeren we de afbeelding uit je assets map
+import BackgroundImage from '../assets/Background.jpg';
+
 const Hero: React.FC = () => {
   return (
     <div className="relative min-h-screen w-full overflow-hidden bg-gray-900 pt-20 lg:pt-0">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://picsum.photos/id/111/1920/1080" 
+          src={BackgroundImage} // 2. Hier gebruiken we de geïmporteerde afbeelding
           alt="Autoschade werkplaats" 
           className="w-full h-full object-cover opacity-60"
         />

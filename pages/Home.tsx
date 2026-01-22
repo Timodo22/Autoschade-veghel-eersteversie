@@ -74,26 +74,6 @@ const Home: React.FC = () => {
           </div>
         </div>
       </section>
-
-      {/* Services Highlight */}
-      <section className="py-16 bg-gray-900 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-12">Onze Specialiteiten</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {[
-              { label: 'Plaatwerk & Richten', icon: '🚗' },
-              { label: 'Spuitwerk', icon: '🎨' },
-              { label: 'Ruitreparatie', icon: '🪟' },
-              { label: 'Spotrepair', icon: '✨' }
-            ].map((item, idx) => (
-              <div key={idx} className="p-6 bg-gray-800 rounded-xl hover:bg-gray-700 transition-colors border-b-4 border-[#ff0d00]">
-                <div className="text-4xl mb-4">{item.icon}</div>
-                <h3 className="font-bold text-lg">{item.label}</h3>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
     </div>
   );
 };
